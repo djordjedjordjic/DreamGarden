@@ -1,0 +1,105 @@
+<app-vlasnik>
+    <div class="content-zak">
+        <h2>Zakazivanja - trenutna</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Firma</th>
+                    <th>Datum zakazivanja</th>
+                    <th>Datum dolaska majstora</th>
+                    <th>Usluge</th>
+                    <th>Tip</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let zakazivanje of trenutnaZakazivanja">
+                    <td>{{ zakazivanje.nazivFirme }}</td>
+                    <td>{{ zakazivanje.datumZakazivanja }}</td>
+                    <td>{{ zakazivanje.datumDolaskaMajstora }}</td>
+                    <td>
+                        <ul>
+                            <li *ngFor="let usluga of zakazivanje.usluge">{{ usluga.naziv }}</li>
+                        </ul>
+                    </td>
+                    <td>{{ zakazivanje.tip }}</td>
+                    <td>{{ zakazivanje.status }}</td>
+                    <td>
+                        <button class="otkazi-dugme" (click)="otkaziPosao(zakazivanje)"
+                            [disabled]="!mozeOtkazati(zakazivanje.datumDolaskaMajstora)">Otkazi</button>
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+
+
+        <h2>Zakazivanja - arhiva</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Firma</th>
+                    <th>Datum dolaska majstora</th>
+                    <th>Tip</th>
+                    <th>Dekorater</th>
+                    <th>Komentar</th>
+                    <th>Ocena</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let zakazivanje of arhivaZakazivanja">
+                    <td>{{ zakazivanje.nazivFirme }}</td>
+                    <td>{{ zakazivanje.datumDolaskaMajstora }}</td>
+                    <td>{{ zakazivanje.tip }}</td>
+                    <td>{{ zakazivanje.dekorater }}</td>
+                    <td>{{ zakazivanje.komentar }}</td>
+                    <td>{{ zakazivanje.ocena }}</td>
+
+                    <td *ngIf="zakazivanje.komentar == '' && zakazivanje.ocena == ''">
+                        <button class="oceni-dugme" (click)="otvoriProzorcic(zakazivanje)">Oceni</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Zakazivanja - odbijena</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Firma</th>
+                    <th>Datum dolaska majstora</th>
+                    <th>Opis</th>
+                    <th>Razlog</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let zakazivanje of odbijenaZakazivanja">
+                    <td>{{ zakazivanje.nazivFirme }}</td>
+                    <td>{{ zakazivanje.datumDolaskaMajstora }}</td>
+                    <td>{{ zakazivanje.opis }}</td>
+                    <td>{{ zakazivanje.razlog }}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="modal" *ngIf="prikaziModal">
+            <div class="modal-content">
+                <h3>Unesite komentar ovde</h3>
+                <textarea [(ngModel)]="komentarUnos" placeholder="Unesite komentar..."></textarea>
+                <div class="input-group">
+                    <label for="ocena">Ocena (1-5):</label>
+                    <input type="number" id="ocena" [(ngModel)]="ocenaUnos" min="1" max="5"
+                        placeholder="Unesite ocenu...">
+                </div>
+                <div *ngIf="porukaGreske != ''" class="crveno">
+                    {{porukaGreske}}
+                </div>
+                <div class="modal-buttons">
+                    <button (click)="potvrdiRecenziju()">Potvrdi</button>
+                    <button (click)="odustani()">Odustani</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</app-vlasnik>

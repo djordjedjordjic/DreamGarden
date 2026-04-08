@@ -1,0 +1,20 @@
+<app-nr-izgled><div class="login-container">
+    <h2>Prijava vlasnik/dekorater</h2>
+    <hr>
+    Korisničko ime: <input type="text" [(ngModel)]="korIme">
+    <br />
+    Lozinka: <input type="password" [(ngModel)]="lozinka">
+    <br />
+    <button (click)="login()">Login</button>
+    <br>
+    <span class="crveno">
+        {{porukaPrvaForma}}
+    </span>
+    <br>
+    <br>
+    Registracija vlasnika <a routerLink="../registracija">ovde.</a>
+    <br>
+    Promeni sifru <a routerLink="../novaSifra">ovde.</a>
+    <br>
+</div>
+</app-nr-izgled>

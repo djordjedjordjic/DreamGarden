@@ -1,0 +1,38 @@
+<app-dekorater>
+    <div class="content-zak">
+        <h2>Zakazivanja - privatne baste</h2>
+        <table class="odrzavanja-table">
+            <thead>
+                <tr>
+                    <th>Klijent</th>
+                    <th>Datum poslednjeg odrzavanja</th>
+                    <th>Akcije</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let odrzavanje of trenutnaOdrzavanja">
+                    <td>{{ odrzavanje.vlasnik }}</td>
+                    <td>{{ odrzavanje.datumPoslednjegOdrzavanja }}</td>
+                    <td>
+                        <button class="btn prihvati" (click)="otvoriProzorcic(odrzavanje)">Prihvati</button>
+                        <button class="btn odbij" (click)="odbijOdrzavanje(odrzavanje)">Odbij</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="modal" *ngIf="prikaziModal">
+            <div class="modal-content">
+                <h3>Unesite datum zavrsetka odrzavanja</h3>
+                <input type="datetime-local" id="startDate" [(ngModel)]="datumZavrsetka" name="startDate" required>
+                <div *ngIf="porukaGreske != ''" class="crveno">
+                    {{porukaGreske}}
+                </div>
+                <div class="modal-buttons">
+                    <button (click)="prihvatiOdrzavanje()">Potvrdi</button>
+                    <button (click)="odustani()">Odustani</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</app-dekorater>

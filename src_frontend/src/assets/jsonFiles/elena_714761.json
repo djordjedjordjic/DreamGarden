@@ -1,0 +1,182 @@
+[
+  {
+    "name": "bazen",
+    "x_axis": 120,
+    "y_axis": 135,
+    "radius": 95
+  },
+  {
+    "name": "zelenilo",
+    "x_axis": 30,
+    "y_axis": 35,
+    "radius": 30
+  },
+  {
+    "name": "zelenilo",
+    "x_axis": 30,
+    "y_axis": 70,
+    "radius": 30
+  },
+    {
+    "name": "zelenilo",
+    "x_axis": 30,
+    "y_axis": 105,
+    "radius": 30
+  },
+    {
+    "name": "zelenilo",
+    "x_axis": 30,
+    "y_axis": 140,
+    "radius": 30
+  },
+    {
+    "name": "zelenilo",
+    "x_axis": 30,
+    "y_axis": 175,
+    "radius": 30
+  },
+    {
+    "name": "zelenilo",
+    "x_axis": 30,
+    "y_axis": 210,
+    "radius": 30
+  },
+    {
+    "name": "zelenilo",
+    "x_axis": 30,
+    "y_axis": 245,
+    "radius": 30
+  },
+   {
+    "name": "zelenilo",
+    "x_axis": 65,
+    "y_axis": 245,
+    "radius": 30
+  },
+   {
+    "name": "zelenilo",
+    "x_axis": 100,
+    "y_axis": 245,
+    "radius": 30
+  },
+   {
+    "name": "zelenilo",
+    "x_axis": 135,
+    "y_axis": 245,
+    "radius": 30
+  },
+   {
+    "name": "zelenilo",
+    "x_axis": 170,
+    "y_axis": 245,
+    "radius": 30
+  },
+   {
+    "name": "zelenilo",
+    "x_axis": 205,
+    "y_axis": 245,
+    "radius": 30
+  },
+   {
+    "name": "zelenilo",
+    "x_axis": 240,
+    "y_axis": 245,
+    "radius": 30
+  },
+   {
+    "name": "zelenilo",
+    "x_axis": 275,
+    "y_axis": 245,
+    "radius": 30
+  },
+   {
+    "name": "zelenilo",
+    "x_axis": 310,
+    "y_axis": 245,
+    "radius": 30
+  },
+   {
+    "name": "zelenilo",
+    "x_axis": 345,
+    "y_axis": 245,
+    "radius": 30
+  },
+   {
+    "name": "zelenilo",
+    "x_axis": 380,
+    "y_axis": 245,
+    "radius": 30
+  },
+  {
+    "name": "zelenilo",
+    "x_axis": 380,
+    "y_axis": 210,
+    "radius": 30
+  },
+   {
+    "name": "zelenilo",
+    "x_axis": 380,
+    "y_axis": 175,
+    "radius": 30
+  },
+   {
+    "name": "zelenilo",
+    "x_axis": 380,
+    "y_axis": 140,
+    "radius": 30
+  },
+   {
+    "name": "zelenilo",
+    "x_axis": 380,
+    "y_axis": 105,
+    "radius": 30
+  },
+   {
+    "name": "zelenilo",
+    "x_axis": 380,
+    "y_axis": 70,
+    "radius": 30
+  },
+  {
+    "name": "zelenilo",
+    "x_axis": 380,
+    "y_axis": 35,
+    "radius": 30
+  },
+  {
+    "name": "sto",
+    "x_axis": 310,
+    "y_axis": 70,
+    "radius": 15
+  },
+  {
+    "name": "sto",
+    "x_axis": 120,
+    "y_axis": 70,
+    "radius": 15
+  },
+  {
+    "name": "lezaljke",
+    "x_axis": 85,
+    "y_axis": 60,
+    "radius": 30
+  },
+    {
+    "name": "lezaljke",
+    "x_axis": 140,
+    "y_axis": 60,
+    "radius": 30
+  },
+   {
+    "name": "lezaljke",
+    "x_axis": 275,
+    "y_axis": 60,
+    "radius": 30
+  },
+   {
+    "name": "lezaljke",
+    "x_axis": 330,
+    "y_axis": 60,
+    "radius": 30
+  }
+]

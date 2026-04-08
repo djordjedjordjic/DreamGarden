@@ -1,0 +1,170 @@
+.registration-container {
+    background: linear-gradient(to right, #ffffff, #f0f0f0); /* Dodajte gradijent boja umesto jednobojne pozadine */
+    /* background-color: #fff; */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+    margin: 50px auto;
+    text-align: center;
+   
+  }
+  
+  .crveno {
+    color: #f00;
+  }
+  
+  .pol{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .pol label {
+    margin-right: 5px;
+  }
+  
+  input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+
+  select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.pol input,
+.pol select {
+    width: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.header {
+  background-color: #D2B48C;
+  color: white;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.header h1 {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+}
+
+.footer {
+  background-color: #D2B48C;
+  color: white;
+  padding: 5px 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.logout-link {
+  position: absolute;
+  right: 20px;
+  color: #fff;
+  background-color: #b23b3b;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.logout-link:hover {
+  background-color: #d9534f;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .logout-link {
+    position: static;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .registration-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  input, select {
+    width: calc(100% - 16px);
+  }
+
+  button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .footer {
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 5px;
+  }
+
+  .logout-link {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  .registration-container {
+    width: 95%;
+    padding: 10px;
+  }
+
+  input, select {
+    width: calc(100% - 12px);
+  }
+
+  button {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .footer {
+    padding: 5px 0;
+  }
+}

@@ -1,0 +1,38 @@
+<app-vlasnik>
+    <div class="controls-container">
+        <div class="controls-group">
+            <label for="sort-by">Sortiraj po:</label>
+            <select id="sort-by" (change)="onSortChange($event)">
+                <option value="">---</option>
+                <option value="nazivRastuce">Naziv rastuce</option>
+                <option value="nazivOpadajuce">Naziv opadajuce</option>
+                <option value="adresaRastuce">Adresa rastuce</option>
+                <option value="adresaOpadajuce">Adresa opadajuce</option>
+            </select>
+        </div>
+        <div class="controls-group">
+            <label for="search-naziv">Pretrazi naziv:</label>
+            <input id="search-naziv" type="text" (input)="onSearchChange('naziv', $event)"
+                placeholder="Unesite naziv...">
+        </div>
+        <div class="controls-group">
+            <label for="search-adresa">Pretrazi adresu:</label>
+            <input id="search-adresa" type="text" (input)="onSearchChange('adresa', $event)"
+                placeholder="Unesite adresu...">
+        </div>
+    </div>
+
+    <div class="firma-list">
+        <div *ngFor="let firma of sortiraneFirme" class="firma-card">
+            <h3>
+                <a [routerLink]="['/firma', firma.naziv]">
+                    {{ firma.naziv }}
+                </a>
+            </h3>
+            <p><strong>Adresa:</strong> {{ firma.adresa }}</p>
+            <p><strong>Prosecna ocena:</strong> {{ firma.prosecnaOcena }}</p>
+            <p><strong>Dekorateri:</strong> {{ getDecoratorsNames(firma.dekorateri) }}</p>
+        </div>
+    </div>
+
+</app-vlasnik>

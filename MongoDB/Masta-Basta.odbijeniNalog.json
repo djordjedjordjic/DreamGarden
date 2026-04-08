@@ -1,0 +1,14 @@
+[{
+  "_id": {
+    "$oid": "66b4eb7b1d4d3c170287278d"
+  },
+  "korIme": "mika",
+  "gmail": "mika@gmail.com"
+},
+{
+  "_id": {
+    "$oid": "66ba42176f90c915f9e143ab"
+  },
+  "korIme": "stefan",
+  "gmail": "stefan@gmail.com"
+}]

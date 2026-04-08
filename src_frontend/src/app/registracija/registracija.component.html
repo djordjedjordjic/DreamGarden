@@ -1,0 +1,101 @@
+<app-nr-izgled>
+    <div class="registration-container">
+        <h2>Registracija</h2>
+
+        <div *ngIf="currentStep === 1">
+
+            <label>Korisničko ime:</label>
+            <input type="text" [(ngModel)]="korisnik.korIme">
+            <span class="crveno">{{porukaKorIme}}</span>
+
+            <br>
+            <label>Lozinka:</label>
+            <input type="password" [(ngModel)]="korisnik.lozinka">
+            <span class="crveno">{{porukaLozinka}}</span>
+
+            <br>
+            <label>Gmail:</label>
+            <input type="text" [(ngModel)]="korisnik.gmail">
+            <span class="crveno">{{porukaGmail}}</span>
+
+            <br>
+            <button (click)="nextStepKiPiG()">Sledeca</button>
+        </div>
+
+        <div *ngIf="currentStep === 2">
+
+            <label>Ime:</label>
+            <input type="text" [(ngModel)]="korisnik.ime">
+            <span class="crveno">{{porukaIme}}</span>
+            <br>
+
+            <label>Prezime:</label>
+            <input type="text" [(ngModel)]="korisnik.prezime">
+            <span class="crveno">{{porukaPrezime}}</span>
+
+            <br>
+
+            <button (click)="prevStep()" style="background-color: rgb(219, 192, 115)">Prethodna</button>
+            &nbsp;
+            <button (click)="nextStepIiP()">Sledeca</button>
+
+        </div>
+
+        <div *ngIf="currentStep === 3">
+
+            <div class="pol">
+                <span>Pol:</span>
+                <label>Muški</label>
+                <input type="radio" name="r1" [(ngModel)]="korisnik.pol" value="M">
+                <label>Ženski</label>
+                <input type="radio" name="r1" [(ngModel)]="korisnik.pol" value="Z">
+            </div>
+
+            <br>
+            <label>Adresa:</label>
+            <input type="text" [(ngModel)]="korisnik.adresa">
+
+            <br>
+            <label>Kontakt telefon:</label>
+            <input type="text" [(ngModel)]="korisnik.kontaktTelefon">
+
+            <br>
+            <label>Broj kartice:</label>
+            <input type="text" [(ngModel)]="korisnik.brojKartice">
+            <span class="crveno">{{porukaBrKartice}}</span>
+            <br>
+
+            <button (click)="prevStep()" style="background-color: rgb(219, 192, 115)">Prethodna</button>
+            &nbsp;
+            <button (click)="nextStepBrKart()">Sledeca</button>
+        </div>
+
+        <div *ngIf="currentStep === totalSteps">
+
+            <label>Profilna slika:</label>
+            <input type="file" id="slika" name="slika" (change)="onFileSelected($event)">
+            <br>
+            <span class="crveno">{{porukaProfilnaSlika}}</span>
+            <br>
+
+            <div class="recaptcha-container" style="display: flex; align-items: center;">
+                <re-captcha [siteKey]="siteKey" (resolved)="resolved($event)">
+                </re-captcha>
+
+                <img *ngIf="ikonaKartice" [src]="ikonaKartice" alt="Tip kartice"
+                    style="width: 80px; height: 60px; margin-left: 15px;">
+            </div>
+            <span class="crveno">{{recaptchaError}}</span>
+
+            <br>
+            <span class="crveno">{{porukaKorIme}}</span>
+            <span class="crveno">{{porukaGmail}}</span>
+            <br>
+
+            <button (click)="prevStep()" style="background-color: rgb(219, 192, 115)">Prethodna</button>
+            &nbsp;
+            <button (click)="register()">Potvrdi</button>
+        </div>
+
+    </div>
+</app-nr-izgled>

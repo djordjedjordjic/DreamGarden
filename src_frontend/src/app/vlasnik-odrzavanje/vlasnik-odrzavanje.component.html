@@ -1,0 +1,44 @@
+<app-vlasnik>
+    <div class="content-zak">
+        <h2>Odrzavanje - zavrseni poslovi</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Firma</th>
+                    <th>Datum pocetka</th>
+                    <th>Datum zavrsetka</th>
+                    <th>Kvadratura vodene povrsine</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let zakazivanje of zavrsenaZakazivanja">
+                    <td>{{ zakazivanje.nazivFirme }}</td>
+                    <td>{{ zakazivanje.datumDolaskaMajstora }}</td>
+                    <td>{{ zakazivanje.datumZavrsetka }}</td>
+                    <td>{{ zakazivanje.kvadraturaPodBazenom || zakazivanje.kvadraturaPodFontanom }}</td>
+                    <td *ngIf = "mogucaOdrzavanjaId.includes(zakazivanje._id)">
+                        <button class="servisiraj-dugme" (click)="zakaziOdrzavanje(zakazivanje)">Servisiraj</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 *ngIf = "odrzavanjaTrenutna && odrzavanjaTrenutna.length">Odrzavanje - trenutno odrzavani</h2>
+        <table *ngIf = "odrzavanjaTrenutna && odrzavanjaTrenutna.length">
+            <thead>
+                <tr>
+                    <th>Firma</th>
+                    <th>Datum poslednjeg odrzavanja</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let odrzavanje of odrzavanjaTrenutna">
+                    <td>{{ odrzavanje.nazivFirme }}</td>
+                    <td>{{ odrzavanje.datumPoslednjegOdrzavanja }}</td>
+                    <td>{{ odrzavanje.status }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</app-vlasnik>

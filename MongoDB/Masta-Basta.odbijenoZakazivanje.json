@@ -1,0 +1,38 @@
+[{
+  "_id": {
+    "$oid": "66cfb947d43480a4841d8cb8"
+  },
+  "vlasnik": "elena",
+  "nazivFirme": "Elence",
+  "datumDolaskaMajstora": "2024-08-29T19:41",
+  "ukupnaKvadratura": "22",
+  "opis": "brzo!",
+  "usluge": [
+    {
+      "naziv": "dekoracija cvecem",
+      "cena": "200"
+    },
+    {
+      "naziv": "dekoracija samo stolova",
+      "cena": "100"
+    }
+  ],
+  "razlog": "ne moze brzo"
+},
+{
+  "_id": {
+    "$oid": "66d1ecd94fc61aa31be1c56a"
+  },
+  "vlasnik": "elena",
+  "nazivFirme": "Elence",
+  "datumDolaskaMajstora": "2024-07-31T02:04",
+  "ukupnaKvadratura": "22",
+  "opis": "",
+  "usluge": [
+    {
+      "naziv": "dekoracija cvecem",
+      "cena": "200"
+    }
+  ],
+  "razlog": "dekorater nije prihvatio zakazivanje na vreme"
+}]

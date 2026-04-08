@@ -1,0 +1,137 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #b3cde0;
+    color: #333;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    text-align: center;
+    white-space: nowrap;
+    color: #333;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #b3cde0;
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+}
+
+/* Manji ekrani, npr. mobilni telefoni */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h1 {
+        position: static;
+        transform: none;
+        margin-top: 10px;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px; 
+    }
+
+    footer {
+        position: fixed; 
+    }
+
+}
+
+/* Srednji ekrani, npr. tableti */
+@media (min-width: 769px) and (max-width: 1280px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        position: static;
+        transform: none;
+        margin: 10px 0;
+        text-align: center;
+        flex: 0 1 auto;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,170 @@
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.firma-details {
+  flex: 2;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+p {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #555;
+}
+
+.usluge-section, .kontakt-section {
+  margin-top: 20px;
+}
+
+.usluge-section h2, .kontakt-section h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.usluge-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.usluge-section li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.recenzije-section {
+  flex: 1;
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.recenzije-section h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.recenzije-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.recenzija {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.recenzija:last-child {
+  border-bottom: none;
+}
+
+.recenzija p {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #333;
+}
+
+.map-container {
+  width: 100%;
+  height: 300px;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.zakazi-dugme {
+  display: block;
+  width: 200px;
+  padding: 10px;
+  margin: 20px auto;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.zakazi-dugme:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+  .content-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .firma-details {
+    flex: 1;
+    margin-bottom: 20px;
+  }
+
+  .recenzije-section {
+    flex: 1;
+    max-height: none;
+  }
+
+  .map-container {
+    height: 250px;
+    margin-top: 20px;
+  }
+
+  .zakazi-dugme {
+    width: 180px;
+  }
+}
+
+/* Stilovi za mobilne uredjaje */
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .firma-details, .recenzije-section {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .firma-details {
+    padding: 15px;
+  }
+
+  .recenzije-section {
+    padding: 10px;
+    border: none;
+    box-shadow: none;
+  }
+
+  .map-container {
+    height: 200px;
+    margin-top: 20px;
+  }
+
+  .zakazi-dugme {
+    width: 160px;
+  }
+}

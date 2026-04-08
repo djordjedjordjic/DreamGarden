@@ -1,0 +1,34 @@
+[{
+  "_id": {
+    "$oid": "66ba576cb21e2757ab9d1277"
+  },
+  "korIme": "tosa",
+  "lozinka": "$2b$10$NHY492lySjMw9tdTz/p11eFl63aUbAS8uB93YIq6ezEcx9Tjru72u",
+  "ime": "Todor",
+  "prezime": "Ostojic",
+  "pol": "M",
+  "adresa": "Njegoseva 1a",
+  "kontaktTelefon": "",
+  "gmail": "tosa@gmail.com",
+  "profilnaSlika": "/assets/profilePic/basic/user.jpg",
+  "brojKartice": "300111111111111",
+  "tip": "V",
+  "aktiviran": "Da"
+},
+{
+  "_id": {
+    "$oid": "66d63dfc760340258caa503a"
+  },
+  "korIme": "pera",
+  "lozinka": "$2b$10$EhHnJSetISOfXwnOOB6x..2vzAsvb7FSNjyopC2NMBz/Xe4mvPW6i",
+  "ime": "Pera",
+  "prezime": "Peric",
+  "pol": "M",
+  "adresa": "Njegoseva 1a",
+  "kontaktTelefon": "+381653338202",
+  "gmail": "pera@gmail.com",
+  "profilnaSlika": "/assets/profilePic/pera.png",
+  "brojKartice": "300123456789090",
+  "tip": "V",
+  "aktiviran": "Da"
+}]

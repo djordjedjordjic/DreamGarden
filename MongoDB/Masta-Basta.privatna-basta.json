@@ -1,0 +1,296 @@
+[{
+  "_id": {
+    "$oid": "66d641ad760340258caa50da"
+  },
+  "vlasnik": "elena",
+  "datumZakazivanja": "2024-09-02T22:52:29.629Z",
+  "datumDolaskaMajstora": "2024-09-11T00:52",
+  "ukupnaKvadratura": "24",
+  "kvadraturaPodBazenom": "12",
+  "kvadraturaPodZelenilom": "10",
+  "kvadraturaLezaljkeIStolovi": "1",
+  "opis": "",
+  "usluge": [
+    {
+      "naziv": "dekoracija stolova ",
+      "cena": "150"
+    },
+    {
+      "naziv": "dekoracija bazena",
+      "cena": "100"
+    }
+  ],
+  "nazivFirme": "Lens Dekor",
+  "izgled": "",
+  "dekorater": "",
+  "status": "Cekanje",
+  "komentar": "",
+  "ocena": "",
+  "datumZavrsetka": ""
+},
+{
+  "_id": {
+    "$oid": "66d64620760340258caa5182"
+  },
+  "vlasnik": "elena",
+  "datumZakazivanja": "2024-03-01T23:11:28.540Z",
+  "datumDolaskaMajstora": "2024-03-01T01:11",
+  "ukupnaKvadratura": "43",
+  "kvadraturaPodBazenom": "12",
+  "kvadraturaPodZelenilom": "21",
+  "kvadraturaLezaljkeIStolovi": "4",
+  "opis": "",
+  "usluge": [
+    {
+      "naziv": "dekoracija stolova ",
+      "cena": "150"
+    },
+    {
+      "naziv": "sredjivanje podova",
+      "cena": "250"
+    }
+  ],
+  "nazivFirme": "Lens Dekor",
+  "izgled": "/assets/jsonFiles/elena_714761.json",
+  "dekorater": "teaa",
+  "status": "Zavrseno",
+  "komentar": "sve pohvale, bilo je sjajno",
+  "ocena": "5",
+  "datumZavrsetka": "2024-03-02T23:22:29.710Z"
+},
+{
+  "_id": {
+    "$oid": "66d64651760340258caa518b"
+  },
+  "vlasnik": "elena",
+  "datumZakazivanja": "2024-09-01T23:12:17.684Z",
+  "datumDolaskaMajstora": "2024-09-02T01:11",
+  "ukupnaKvadratura": "45",
+  "kvadraturaPodBazenom": "12",
+  "kvadraturaPodZelenilom": "12",
+  "kvadraturaLezaljkeIStolovi": "7",
+  "opis": "",
+  "usluge": [
+    {
+      "naziv": "dekoracija bazena",
+      "cena": "100"
+    },
+    {
+      "naziv": "dekoracija stolova ",
+      "cena": "150"
+    }
+  ],
+  "nazivFirme": "Lens Dekor",
+  "izgled": "",
+  "dekorater": "teaa",
+  "status": "Prihvaceno",
+  "komentar": "",
+  "ocena": "",
+  "datumZavrsetka": ""
+},
+{
+  "_id": {
+    "$oid": "66d64864760340258caa51ca"
+  },
+  "vlasnik": "elena",
+  "datumZakazivanja": "2024-09-02T23:21:08.461Z",
+  "datumDolaskaMajstora": "2024-10-09T01:21",
+  "ukupnaKvadratura": "55",
+  "kvadraturaPodBazenom": "12",
+  "kvadraturaPodZelenilom": "12",
+  "kvadraturaLezaljkeIStolovi": "4",
+  "opis": "",
+  "usluge": [
+    {
+      "naziv": "dekoracija prilaza basti",
+      "cena": "450"
+    },
+    {
+      "naziv": "dekoracija stolova ",
+      "cena": "150"
+    }
+  ],
+  "nazivFirme": "Lens Dekor",
+  "izgled": "",
+  "dekorater": "",
+  "status": "Cekanje",
+  "komentar": "",
+  "ocena": "",
+  "datumZavrsetka": ""
+},
+{
+  "_id": {
+    "$oid": "66d64947760340258caa5209"
+  },
+  "vlasnik": "elena",
+  "datumZakazivanja": "2024-01-02T23:24:55.028Z",
+  "datumDolaskaMajstora": "2024-02-05T01:24",
+  "ukupnaKvadratura": "61",
+  "kvadraturaPodBazenom": "14",
+  "kvadraturaPodZelenilom": "15",
+  "kvadraturaLezaljkeIStolovi": "5",
+  "opis": "",
+  "usluge": [
+    {
+      "naziv": "dekoracija prilaza basti",
+      "cena": "450"
+    },
+    {
+      "naziv": "sredjivanje podova",
+      "cena": "250"
+    }
+  ],
+  "nazivFirme": "Lens Dekor",
+  "izgled": "",
+  "dekorater": "teaa",
+  "status": "Zavrseno",
+  "komentar": "",
+  "ocena": "",
+  "datumZavrsetka": "2024-03-02T23:26:48.260Z"
+},
+{
+  "_id": {
+    "$oid": "66d6495b760340258caa5212"
+  },
+  "vlasnik": "elena",
+  "datumZakazivanja": "2024-06-06T23:25:15.676Z",
+  "datumDolaskaMajstora": "2024-06-12T01:25",
+  "ukupnaKvadratura": "62",
+  "kvadraturaPodBazenom": "15",
+  "kvadraturaPodZelenilom": "15",
+  "kvadraturaLezaljkeIStolovi": "6",
+  "opis": "",
+  "usluge": [
+    {
+      "naziv": "dekoracija stolova ",
+      "cena": "150"
+    },
+    {
+      "naziv": "sredjivanje podova",
+      "cena": "250"
+    }
+  ],
+  "nazivFirme": "Lens Dekor",
+  "izgled": "",
+  "dekorater": "teaa",
+  "status": "Zavrseno",
+  "komentar": "",
+  "ocena": "",
+  "datumZavrsetka": "2024-09-02T23:26:49.236Z"
+},
+{
+  "_id": {
+    "$oid": "66d64970760340258caa521b"
+  },
+  "vlasnik": "elena",
+  "datumZakazivanja": "2024-08-02T23:25:36.940Z",
+  "datumDolaskaMajstora": "2024-08-11T01:25",
+  "ukupnaKvadratura": "63",
+  "kvadraturaPodBazenom": "33",
+  "kvadraturaPodZelenilom": "12",
+  "kvadraturaLezaljkeIStolovi": "7",
+  "opis": "",
+  "usluge": [
+    {
+      "naziv": "dekoracija stolova ",
+      "cena": "150"
+    },
+    {
+      "naziv": "dekoracija bazena",
+      "cena": "100"
+    }
+  ],
+  "nazivFirme": "Lens Dekor",
+  "izgled": "",
+  "dekorater": "teaa",
+  "status": "Zavrseno",
+  "komentar": "",
+  "ocena": "",
+  "datumZavrsetka": "2024-09-02T23:26:50.165Z"
+},
+{
+  "_id": {
+    "$oid": "66d64a53760340258caa5272"
+  },
+  "vlasnik": "elena",
+  "datumZakazivanja": "2024-08-12T23:29:23.404Z",
+  "datumDolaskaMajstora": "2024-08-14T01:29",
+  "ukupnaKvadratura": "64",
+  "kvadraturaPodBazenom": "32",
+  "kvadraturaPodZelenilom": "12",
+  "kvadraturaLezaljkeIStolovi": "11",
+  "opis": "",
+  "usluge": [
+    {
+      "naziv": "dekoracija prilaza basti",
+      "cena": "450"
+    },
+    {
+      "naziv": "sredjivanje podova",
+      "cena": "250"
+    }
+  ],
+  "nazivFirme": "Lens Dekor",
+  "izgled": "",
+  "dekorater": "misa",
+  "status": "Zavrseno",
+  "komentar": "",
+  "ocena": "",
+  "datumZavrsetka": "2024-09-02T23:31:37.124Z"
+},
+{
+  "_id": {
+    "$oid": "66d64a6c760340258caa527b"
+  },
+  "vlasnik": "elena",
+  "datumZakazivanja": "2024-08-02T23:29:48.036Z",
+  "datumDolaskaMajstora": "2024-08-04T01:29",
+  "ukupnaKvadratura": "65",
+  "kvadraturaPodBazenom": "33",
+  "kvadraturaPodZelenilom": "12",
+  "kvadraturaLezaljkeIStolovi": "7",
+  "opis": "",
+  "usluge": [
+    {
+      "naziv": "sredjivanje podova",
+      "cena": "250"
+    },
+    {
+      "naziv": "dekoracija stolova ",
+      "cena": "150"
+    }
+  ],
+  "nazivFirme": "Lens Dekor",
+  "izgled": "",
+  "dekorater": "misa",
+  "status": "Zavrseno",
+  "komentar": "",
+  "ocena": "",
+  "datumZavrsetka": "2024-09-02T23:31:36.621Z"
+},
+{
+  "_id": {
+    "$oid": "66d64a7f760340258caa5284"
+  },
+  "vlasnik": "elena",
+  "datumZakazivanja": "2024-09-01T23:30:07.060Z",
+  "datumDolaskaMajstora": "2024-09-02T01:29",
+  "ukupnaKvadratura": "66",
+  "kvadraturaPodBazenom": "33",
+  "kvadraturaPodZelenilom": "22",
+  "kvadraturaLezaljkeIStolovi": "11",
+  "opis": "",
+  "usluge": [
+    {
+      "naziv": "dekoracija prilaza basti",
+      "cena": "450"
+    }
+  ],
+  "nazivFirme": "Lens Dekor",
+  "izgled": "",
+  "dekorater": "misa",
+  "status": "Zavrseno",
+  "komentar": "",
+  "ocena": "",
+  "datumZavrsetka": "2024-09-02T23:31:40.557Z"
+}]

@@ -1,0 +1,51 @@
+<app-vlasnik>
+    <div class="user-info-container">
+        <h2>Informacije o korisniku</h2>
+        <div class="user-info">
+            <div class="info-item">
+                <label for="ime">Ime:</label>
+                <input id="ime" type="text" [(ngModel)]="korisnik.ime" name="ime">
+            </div>
+            <div class="info-item">
+                <label for="prezime">Prezime:</label>
+                <input id="prezime" type="text" [(ngModel)]="korisnik.prezime" name="prezime">
+            </div>
+            <div class="info-item">
+                <label for="adresa">Adresa:</label>
+                <input id="adresa" type="text" [(ngModel)]="korisnik.adresa" name="adresa">
+            </div>
+            <div class="info-item">
+                <label for="gmail">E-mail adresa:</label>
+                <input id="gmail" type="text" [(ngModel)]="korisnik.gmail" name="gmail">
+            </div>
+            <div class="info-item">
+                <label for="kontaktTelefon">Kontakt telefon:</label>
+                <input id="kontaktTelefon" type="text" [(ngModel)]="korisnik.kontaktTelefon" name="kontaktTelefon">
+            </div>
+            <div class="info-item">
+                <label for="brojKartice">Broj kreditne kartice:</label>
+                <input id="brojKartice" type="text" [(ngModel)]="korisnik.brojKartice" name="brojKartice"  (ngModelChange)="proveriKarticu()">
+            </div>
+            <div class="info-item">
+                <label for="profilnaSlika">Profilna slika:</label>
+                <div class="profile-image">
+                    <img [src]="korisnik.profilnaSlika" alt="Profilna slika">
+                </div>
+                <input type="file" (change)="onFileSelected($event)">
+            </div>
+        </div>
+        <div *ngIf="porukaProfilna && !porukaBrKartice" class="crveno">
+            {{porukaProfilna}}
+        </div>
+        <div *ngIf="porukaBrKartice" class="crveno">
+            {{porukaBrKartice}}
+        </div>
+        <div *ngIf="porukaGmail" class="crveno">
+            {{porukaGmail}}
+        </div>
+        <div class="update-button-container">
+            <button type="button" (click)="azurirajInfo()">Ažuriraj</button>
+        </div>
+    </div>
+
+</app-vlasnik>

@@ -1,0 +1,23 @@
+canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+.chart-container {
+    padding-bottom: 80px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+
+}
+
+@media (max-width: 768px) {
+    .chart-container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .chart-container {
+        padding: 5px;
+    }
+}

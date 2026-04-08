@@ -1,0 +1,74 @@
+<div class="header">
+  <h1>Admin</h1>
+  <div class="links">
+    <a routerLink="../admin-dekorater" class="header-link">Dodaj dekoratera</a>
+    <a routerLink="../admin-firma" class="header-link">Dodaj firmu</a>
+    <a href="#" (click)="logout($event)" class="header-link">Logout</a>
+  </div>
+</div>
+
+<div class="content">
+  <h2>Pristigli zahtevi</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>korIme</th>
+        <th>Ime</th>
+        <th>Prezime</th>
+        <th>Adresa</th>
+        <th>Gmail</th>
+        <th>Broj kartice</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let zahtev of zahtevi">
+        <td>{{ zahtev.korIme }}</td>
+        <td>{{ zahtev.ime }}</td>
+        <td>{{ zahtev.prezime }}</td>
+        <td>{{ zahtev.adresa }}</td>
+        <td>{{ zahtev.gmail }}</td>
+        <td>{{ zahtev.brojKartice }}</td>
+        <td>
+          <button (click)="prihvatiZahtev(zahtev)">Prihvati</button>
+          <button (click)="odbijZahtev(zahtev)">Odbij</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Svi korisnici</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>korIme</th>
+        <th>Ime</th>
+        <th>Prezime</th>
+        <th>Gmail</th>
+        <th>Broj kartice</th>
+        <th>Firma</th>
+        <th>Tip</th>
+        <th>Aktiviran</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let korisnik of korisnici">
+        <td>{{ korisnik.korIme }}</td>
+        <td>{{ korisnik.ime }}</td>
+        <td>{{ korisnik.prezime }}</td>
+        <td>{{ korisnik.gmail }}</td>
+        <td>{{ korisnik.brojKartice }}</td>
+        <td>{{ korisnik.firma }}</td>
+        <td>{{ korisnik.tip }}</td>
+        <td>{{ korisnik.aktiviran }}</td>
+        <td>
+          <button (click)="azurirajKorisnika(korisnik)">Azuriraj</button>
+          <button *ngIf="korisnik.aktiviran === 'Da'" (click)="deaktivirajKorisnika(korisnik)">Deaktiviraj</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="footer">
+  <p>© 2024 Djordje Djordjic. Sva prava zadržana.</p>
+</div>

@@ -1,0 +1,14 @@
+<div class="login-container">
+    <h2>Prijava admin</h2>
+    <hr>
+    Korisničko ime: <input type="text" [(ngModel)]="korIme">
+    <br />
+    Lozinka: <input type="password" [(ngModel)]="lozinka">
+    <br />
+    <button (click)="login()">Login</button>
+    <br>
+    <span class="crveno">
+        {{porukaLoginAdmin}}
+    </span>
+    <br>
+</div>

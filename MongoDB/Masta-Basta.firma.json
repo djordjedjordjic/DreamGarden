@@ -1,0 +1,134 @@
+[{
+  "_id": {
+    "$oid": "66d63a5b760340258caa4fb2"
+  },
+  "naziv": "Dekoracija NBGD",
+  "adresa": "Bulevar umetnosti 20",
+  "usluge": [
+    {
+      "naziv": "dekoracija stolova",
+      "cena": "300"
+    },
+    {
+      "naziv": "ciscenje nakon slavlja ",
+      "cena": "200"
+    },
+    {
+      "naziv": "dekoracija bazena",
+      "cena": "100"
+    }
+  ],
+  "lokacija": {
+    "lat": 44.81463228187132,
+    "lng": 20.408735275268555,
+    "_id": {
+      "$oid": "66d63a5b760340258caa4fb3"
+    }
+  },
+  "kontaktOsoba": "paja",
+  "dekorateri": [
+    {
+      "_id": "66d639f4760340258caa4fab",
+      "korIme": "paja",
+      "lozinka": "$2b$10$SqVMOh.z1VlZTa3t5CPe4O7CLC3PqQ.rLDloVGOzUZDSSM4lnGWbC",
+      "ime": "Paja",
+      "prezime": "Pajic",
+      "pol": "M",
+      "adresa": "Marka Kraljevica 10b",
+      "kontaktTelefon": "+381627382343",
+      "gmail": "paja@gmail.com",
+      "profilnaSlika": "/assets/profilePic/basic/userDeco.jpg",
+      "brojKartice": "5112344345786433",
+      "tip": "D",
+      "aktiviran": "Da",
+      "firma": ""
+    },
+    {
+      "_id": "66ba44f06f90c915f9e143d7",
+      "korIme": "jare",
+      "lozinka": "$2b$10$AaCUXMhrXOZ6eK9ERCFeNO4VL80jlnyg8mPG7ZDeMuGEEF6jqcl4O",
+      "ime": "Jare",
+      "prezime": "Jaric",
+      "pol": "M",
+      "adresa": "Marsala Tulbuhina 2",
+      "kontaktTelefon": "",
+      "gmail": "jare@gmail.com",
+      "profilnaSlika": "/assets/profilePic/basic/userDeco.jpg",
+      "brojKartice": "300111111111111",
+      "tip": "D",
+      "aktiviran": "Da",
+      "firma": ""
+    }
+  ],
+  "pocetakGodisnjegOdmora": "2024-09-07",
+  "krajGodisnjegOdmora": "2024-09-14"
+},
+{
+  "_id": {
+    "$oid": "66d64170760340258caa50c0"
+  },
+  "naziv": "Lens Dekor",
+  "adresa": "Vuka Karadzica 12",
+  "usluge": [
+    {
+      "naziv": "dekoracija prilaza basti",
+      "cena": "450"
+    },
+    {
+      "naziv": "dekoracija stolova ",
+      "cena": "150"
+    },
+    {
+      "naziv": "sredjivanje podova",
+      "cena": "250"
+    },
+    {
+      "naziv": "dekoracija bazena",
+      "cena": "100"
+    }
+  ],
+  "lokacija": {
+    "lat": 44.81758905516768,
+    "lng": 20.45553982257843,
+    "_id": {
+      "$oid": "66d64170760340258caa50c1"
+    }
+  },
+  "kontaktOsoba": "teaa",
+  "dekorateri": [
+    {
+      "_id": "66bf46eba2b0101e6f05f4a7",
+      "korIme": "teaa",
+      "lozinka": "$2b$10$Mg6CLpSEJGAAEeOzOQfIAumZMlfA1J0cz4eZnlMugj4ZTk3jaZs5W",
+      "ime": "Teodora",
+      "prezime": "Djukic",
+      "pol": "Z",
+      "adresa": "Petruseva 1",
+      "kontaktTelefon": "+38165230263",
+      "gmail": "tea@gmail.com",
+      "profilnaSlika": "/assets/profilePic/teaa.jpg",
+      "brojKartice": "300123456543210",
+      "tip": "D",
+      "aktiviran": "Da",
+      "firma": ""
+    },
+    {
+      "_id": "66c1ecbdca262bd610deed83",
+      "korIme": "misa",
+      "lozinka": "$2b$10$Jg62r9Fl43Vfi69CgDCRH.SyZs3cZ3SQ1f3BuKdU9UsDKpS.Y4Lr2",
+      "ime": "Misa",
+      "prezime": "Misic",
+      "pol": "M",
+      "adresa": "Prohorska 1",
+      "kontaktTelefon": "",
+      "gmail": "misa@gmail.com",
+      "profilnaSlika": "/assets/profilePic/basic/userDeco.jpg",
+      "brojKartice": "4556111111111111",
+      "tip": "D",
+      "aktiviran": "Da",
+      "firma": ""
+    }
+  ],
+  "pocetakGodisnjegOdmora": "2024-09-21",
+  "krajGodisnjegOdmora": "2024-09-28"
+}]

@@ -1,0 +1,36 @@
+<app-vlasnik>
+  <div class="content-container">
+    <div class="firma-details">
+      <h1>{{ firma.naziv }}</h1>
+      <p><strong>Adresa:</strong> {{ firma.adresa }}</p>
+
+      <div class="usluge-section">
+        <h2>Usluge</h2>
+        <ul>
+          <li *ngFor="let usluga of firma.usluge">
+            {{ usluga.naziv }} - {{ usluga.cena }}e
+          </li>
+        </ul>
+      </div>
+
+      <div class="kontakt-section">
+        <p><strong>Kontakt Osoba:</strong> {{ firma.kontaktOsoba }} / {{kontaktOsobaBrojTelefona}}</p>
+      </div>
+    </div>
+
+    <div class="recenzije-section">
+      <h2>Komentari</h2>
+      <div class="recenzije-container">
+        <div class="recenzija" *ngFor="let recenzija of svaZakazivanja">
+          <p>{{ recenzija.komentar }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="map-container">
+    <app-map-display [location]="firma.lokacija"></app-map-display>
+  </div>
+
+  <button class="zakazi-dugme" [routerLink]="['/firma-zakazivanje', firma.naziv]">Zakazi</button>
+</app-vlasnik>

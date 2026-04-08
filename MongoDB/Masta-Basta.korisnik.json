@@ -1,0 +1,107 @@
+[{
+  "_id": {
+    "$oid": "66b62374185c88e717e6b29b"
+  },
+  "korIme": "lane",
+  "lozinka": "$2b$10$adsCYmszeiTIDTNK7kkM6.WSv3L9eHbctXho4rEo5kHu6vU98dJZ6",
+  "ime": "Lane",
+  "prezime": "Lanic",
+  "pol": "M",
+  "adresa": "Ugrinovacka 11a",
+  "kontaktTelefon": "",
+  "gmail": "lane@gmail.com",
+  "profilnaSlika": "/assets/profilePic/basic/userDeco.png",
+  "brojKartice": "5112345678909876",
+  "tip": "D",
+  "aktiviran": "Da",
+  "firma": ""
+},
+{
+  "_id": {
+    "$oid": "66ba44f06f90c915f9e143d7"
+  },
+  "korIme": "jare",
+  "lozinka": "$2b$10$AaCUXMhrXOZ6eK9ERCFeNO4VL80jlnyg8mPG7ZDeMuGEEF6jqcl4O",
+  "ime": "Jare",
+  "prezime": "Jaric",
+  "pol": "M",
+  "adresa": "Marsala Tulbuhina 2",
+  "kontaktTelefon": "",
+  "gmail": "jare@gmail.com",
+  "profilnaSlika": "/assets/profilePic/basic/userDeco.png",
+  "brojKartice": "300111111111111",
+  "tip": "D",
+  "aktiviran": "Da",
+  "firma": "Dekoracija NBGD"
+},
+{
+  "_id": {
+    "$oid": "66bc7f35a449f0afdd657ff6"
+  },
+  "korIme": "elena",
+  "lozinka": "$2b$10$QkImQJcjckMHlH4Sz4fl9u269pe3.dl1OIduptRPCqCmywVI6rqs2",
+  "ime": "Elena",
+  "prezime": "Vlajkovic",
+  "pol": "Z",
+  "adresa": "Oktobarska 13a",
+  "kontaktTelefon": "+381623940021",
+  "gmail": "elena@gmail.com",
+  "profilnaSlika": "/assets/profilePic/elena.png",
+  "brojKartice": "300123456789092",
+  "tip": "V",
+  "aktiviran": "Da"
+},
+{
+  "_id": {
+    "$oid": "66bf46eba2b0101e6f05f4a7"
+  },
+  "korIme": "teaa",
+  "lozinka": "$2b$10$Mg6CLpSEJGAAEeOzOQfIAumZMlfA1J0cz4eZnlMugj4ZTk3jaZs5W",
+  "ime": "Teodora",
+  "prezime": "Djukic",
+  "pol": "Z",
+  "adresa": "Petruseva 1",
+  "kontaktTelefon": "+38165230263",
+  "gmail": "tea@gmail.com",
+  "profilnaSlika": "/assets/profilePic/teaa.jpg",
+  "brojKartice": "300123456543210",
+  "tip": "D",
+  "aktiviran": "Da",
+  "firma": "Lens Dekor"
+},
+{
+  "_id": {
+    "$oid": "66c1ecbdca262bd610deed83"
+  },
+  "korIme": "misa",
+  "lozinka": "$2b$10$Jg62r9Fl43Vfi69CgDCRH.SyZs3cZ3SQ1f3BuKdU9UsDKpS.Y4Lr2",
+  "ime": "Misa",
+  "prezime": "Misic",
+  "pol": "M",
+  "adresa": "Prohorska 1",
+  "kontaktTelefon": "",
+  "gmail": "misa@gmail.com",
+  "profilnaSlika": "/assets/profilePic/basic/userDeco.png",
+  "brojKartice": "4556111111111111",
+  "tip": "D",
+  "aktiviran": "Da",
+  "firma": "Lens Dekor"
+},
+{
+  "_id": {
+    "$oid": "66d639f4760340258caa4fab"
+  },
+  "korIme": "paja",
+  "lozinka": "$2b$10$SqVMOh.z1VlZTa3t5CPe4O7CLC3PqQ.rLDloVGOzUZDSSM4lnGWbC",
+  "ime": "Paja",
+  "prezime": "Pajic",
+  "pol": "M",
+  "adresa": "Marka Kraljevica 10b",
+  "kontaktTelefon": "+381627382343",
+  "gmail": "paja@gmail.com",
+  "profilnaSlika": "/assets/profilePic/basic/userDeco.png",
+  "brojKartice": "5112344345786433",
+  "tip": "D",
+  "aktiviran": "Da",
+  "firma": "Dekoracija NBGD"
+}]

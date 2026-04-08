@@ -1,0 +1,122 @@
+<app-vlasnik>
+    <div class="zakazivanje-container">
+        <h2>Zakazivanje</h2>
+
+        <div *ngIf="currentStep === 1">
+
+            <label>Unesite ukupnu kvadraturu baste(m^2):</label>
+            <input type="text" [(ngModel)]="ukupnaKvadratura">
+            <span class="crveno">{{porukaUkupnaKvadratura}}</span>
+
+            <br>
+            <div class="tip">
+                <span>Tip baste:</span>
+                <label>Privatna basta</label>
+                <input type="radio" name="r1" [(ngModel)]="tipBaste" value="P">
+                <label>Basta restorana</label>
+                <input type="radio" name="r1" [(ngModel)]="tipBaste" value="R">
+            </div>
+            <br>
+            <span class="crveno">{{porukaTip}}</span>
+
+            <form>
+                <label for="startDateTime">Datum i vreme dolaska majstora:</label>
+                <input type="datetime-local" id="startDateTime" [(ngModel)]="startDateTime" name="startDateTime"
+                    required>
+            </form>
+            <span class="crveno">{{porukaDatum}}</span>
+            <br>
+
+            <button (click)="nextStepK1()">Sledeci korak</button>
+
+        </div>
+
+        <div *ngIf="currentStep === 2">
+
+            <div [ngSwitch]="tipBaste">
+                <div *ngSwitchCase="'P'">
+
+                    <label>Unesite kvadraturu pod bazenom(m^2):</label>
+                    <input type="text" [(ngModel)]="privatnaBasta.kvadraturaPodBazenom"
+                        (ngModelChange)="proveriJelBroj(privatnaBasta.kvadraturaPodBazenom)">
+                    <br>
+
+                    <label>Unesite kvadraturu pod zelenilom(m^2):</label>
+                    <input type="text" [(ngModel)]="privatnaBasta.kvadraturaPodZelenilom"
+                        (ngModelChange)="proveriJelBroj(privatnaBasta.kvadraturaPodZelenilom)">
+                    <br>
+
+                    <label>Unesite kvadraturu za lezaljke i stolove(m^2):</label>
+                    <input type="text" [(ngModel)]="privatnaBasta.kvadraturaLezaljkeIStolovi"
+                        (ngModelChange)="proveriJelBroj(privatnaBasta.kvadraturaLezaljkeIStolovi)">
+                    <br>
+
+                </div>
+                <div *ngSwitchCase="'R'">
+
+                    <label>Unesite kvadraturu za fontanu(m^2):</label>
+                    <input type="text" [(ngModel)]="restoranBasta.kvadraturaPodFontanom"
+                        (ngModelChange)="proveriJelBroj(restoranBasta.kvadraturaPodFontanom)">
+                    <br>
+
+                    <label>Unesite kvadraturu pod zelenilom(m^2):</label>
+                    <input type="text" [(ngModel)]="restoranBasta.kvadraturaPodZelenilom"
+                        (ngModelChange)="proveriJelBroj(restoranBasta.kvadraturaPodZelenilom)">
+                    <br>
+
+                    <label>Unesite broj stolova:</label>
+                    <input type="text" [(ngModel)]="restoranBasta.brojStolova"
+                        (ngModelChange)="proveriJelBroj(restoranBasta.brojStolova)">
+                    <br>
+
+                    <label>Unesite broj lezaljki:</label>
+                    <input type="text" [(ngModel)]="restoranBasta.brojLezaljki"
+                        (ngModelChange)="proveriJelBroj(restoranBasta.brojLezaljki)">
+                    <br>
+
+                </div>
+            </div>
+            <br>
+            <span class="crveno">{{porukaKorakDva}}</span>
+            <br>
+
+            <button (click)="prevStep()" style="background-color: rgb(219, 192, 115)">Prethodna</button>
+            &nbsp;
+            <button (click)="nextStepK2()">Sledeca</button>
+
+        </div>
+
+        <div *ngIf="currentStep === totalSteps">
+
+            <label>Unesite kratak opis sa dodatnim zahtevima:</label>
+            <textarea [(ngModel)]="dodatniZahtevi" rows="4" cols="50"></textarea>
+            <br>
+
+            <div>
+                <h3>Izaberite usluge:</h3>
+                <div *ngFor="let usluga of firma.usluge; let i = index">
+                    {{usluga.naziv}} - {{usluga.cena}}e
+                    <input type="checkbox" [value]="usluga" (change)="onUslugaChange(usluga, $event)">
+                </div>
+            </div>
+
+            <label>JSON fajl:</label>
+            <input type="file" id="jsonF" name="jsonF" (change)="onFileSelected($event)">
+            <br>
+            <span class="crveno">{{porukaJSONFajl}}</span>
+            <br>
+            <canvas *ngIf="selectedJsonFile" id="myCanvas" width="450" height="310" style="border:1px solid #000000;"></canvas>
+            <br>
+
+            <br>
+            <span [ngClass]="{'crveno': !uspesnaRezervacija, 'zeleno': uspesnaRezervacija}">{{porukaKorakTri}}</span>
+            <br>
+
+            <button (click)="prevStep()" style="background-color: rgb(219, 192, 115)">Prethodna</button>
+            &nbsp;
+            <button (click)="potvrdi()">Potvrdi</button>
+        </div>
+
+
+    </div>
+</app-vlasnik>

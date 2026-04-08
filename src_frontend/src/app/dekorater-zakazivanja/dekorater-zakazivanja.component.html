@@ -1,0 +1,91 @@
+<app-dekorater>
+
+
+    <div class="content-zak">
+        <h2>Zakazivanja - privatne baste</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Klijent</th>
+                    <th>Datum dolaska majstora</th>
+                    <th>Ukupna kvadratura</th>
+                    <th>Usluge</th>
+                    <th>Status</th>
+                    <th>Opis</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let zakazivanje of zakazivanjaPrivatna">
+                    <td>{{ zakazivanje.vlasnik }}</td>
+                    <td>{{ zakazivanje.datumDolaskaMajstora }}</td>
+                    <td>{{ zakazivanje.ukupnaKvadratura }}</td>
+                    <td>
+                        <ul>
+                            <li *ngFor="let usluga of zakazivanje.usluge">{{ usluga.naziv }}</li>
+                        </ul>
+                    </td>
+                    <td>{{ zakazivanje.status }}</td>
+                    <td>{{ zakazivanje.opis }}</td>
+                    <td *ngIf = "zakazivanje.status == 'Cekanje'">
+                        <button (click)="prihvatiZahtev(zakazivanje)">Prihvati</button>
+                        <button (click)="otvoriProzorcic(zakazivanje)">Odbij</button>
+                    </td>
+                    <td *ngIf = "zakazivanje.status == 'Prihvaceno'">
+                        <button class="zavrsi-dugme" (click)="zavrsiPosao(zakazivanje)" [disabled]="!mozeZavrsiti(zakazivanje.datumDolaskaMajstora)">Zavrsi</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <h2>Zakazivanja - restorani</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Klijent</th>
+                    <th>Datum dolaska majstora</th>
+                    <th>Ukupna kvadratura</th>
+                    <th>Usluge</th>
+                    <th>Status</th>
+                    <th>Opis</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let zakazivanje of zakazivanjaRestoran">
+                    <td>{{ zakazivanje.vlasnik }}</td>
+                    <td>{{ zakazivanje.datumDolaskaMajstora }}</td>
+                    <td>{{ zakazivanje.ukupnaKvadratura }}</td>
+                    <td>
+                        <ul>
+                            <li *ngFor="let usluga of zakazivanje.usluge">{{ usluga.naziv }}</li>
+                        </ul>
+                    </td>
+                    <td>{{ zakazivanje.status }}</td>
+                    <td>{{ zakazivanje.opis }}</td>
+                    <td *ngIf = "zakazivanje.status == 'Cekanje'">
+                        <button (click)="prihvatiZahtev(zakazivanje)">Prihvati</button>
+                        <button (click)="otvoriProzorcic(zakazivanje)">Odbij</button>
+                    </td>
+                    <td *ngIf = "zakazivanje.status == 'Prihvaceno'">
+                        <button class="zavrsi-dugme" (click)="zavrsiPosao(zakazivanje)" [disabled]="!mozeZavrsiti(zakazivanje.datumDolaskaMajstora)">Zavrsi</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="modal" *ngIf="prikaziModal">
+            <div class="modal-content">
+                <h3>Unesite razlog odbijanja</h3>
+                <textarea [(ngModel)]="razlogOdbijanja" placeholder="Unesite razlog..."></textarea>
+                <div *ngIf="porukaOdbijanje != ''" class="crveno">
+                    {{porukaOdbijanje}}
+                </div>
+                <div class="modal-buttons">
+                    <button (click)="potvrdiOdbijanje()">Potvrdi</button>
+                    <button (click)="odustani()">Odustani</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</app-dekorater>

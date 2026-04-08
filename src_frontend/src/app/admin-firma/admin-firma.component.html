@@ -1,0 +1,135 @@
+<div class="header">
+    <h1>Admin</h1>
+    <a href="#" (click)="logout($event)" class="logout-link">Logout</a>
+</div>
+
+
+<div class="registration-container">
+    <h2>Dodavanje firme</h2>
+
+    <div *ngIf="currentStep === 1">
+
+        <label>Naziv firme:</label>
+        <input type="text" [(ngModel)]="firma.naziv">
+        <span class="crveno">{{porukaNaziv}}</span>
+
+        <br>
+        <label>Adresa:</label>
+        <input type="text" [(ngModel)]="firma.adresa">
+        <span class="crveno">{{porukaAdresa}}</span>
+
+        <br>
+        <label for="firmaSelect">Kontakt osoba:</label>
+        <select id="firmaSelect" [(ngModel)]="firma.kontaktOsoba">
+            <option *ngFor="let dekorater of dekorateri" [value]="dekorater.korIme">{{ dekorater.korIme }}</option>
+        </select>
+        <br>
+
+        <form>
+            <label for="startDate">Pocetak odmora:</label>
+            <input type="date" id="startDate" [(ngModel)]="startDate" name="startDate" required>
+
+            <label for="endDate">Kraj odmora:</label>
+            <input type="date" id="endDate"  [(ngModel)]="endDate" name="endDate" required>
+
+        </form>
+        <br>
+        <span class="crveno">{{porukaOdmor}}</span>
+        <br>
+
+        <button (click)="nextStepNiAiO()">Sledeca</button>
+    </div>
+
+    <div *ngIf="currentStep === 2">
+
+        <h3>Usluge i cene(u evrima)</h3>
+        <div class="usluge-container">
+            <div class="left-column">
+                <label>Usluga 1:</label>
+                <input type="text" [(ngModel)]="usluga1.naziv">
+                <label>Usluga 2:</label>
+                <input type="text" [(ngModel)]="usluga2.naziv">
+                <label>Usluga 3:</label>
+                <input type="text" [(ngModel)]="usluga3.naziv">
+                <label>Usluga 4:</label>
+                <input type="text" [(ngModel)]="usluga4.naziv">
+                <label>Usluga 5:</label>
+                <input type="text" [(ngModel)]="usluga5.naziv">
+            </div>
+
+            <div class="right-column">
+                <label>Cena 1:</label>
+                <input type="text" [(ngModel)]="usluga1.cena">
+                <label>Cena 2:</label>
+                <input type="text" [(ngModel)]="usluga2.cena">
+                <label>Cena 3:</label>
+                <input type="text" [(ngModel)]="usluga3.cena">
+                <label>Cena 4:</label>
+                <input type="text" [(ngModel)]="usluga4.cena">
+                <label>Cena 5:</label>
+                <input type="text" [(ngModel)]="usluga5.cena">
+            </div>
+        </div>
+        <br>
+        <span class="crveno">{{porukaUsluge}}</span>
+        <br>
+        <button (click)="prevStep()" style="background-color: rgb(219, 192, 115)">Prethodna</button>
+        &nbsp;
+        <button (click)="nextStepUiC()">Sledeca</button>
+
+    </div>
+
+    <div *ngIf="currentStep === 3">
+        <app-map-selector></app-map-selector>
+        <br>
+        <br>
+        <span class="crveno">{{porukaMapa}}</span>
+        <br>
+        <button (click)="prevStep()" style="background-color: rgb(219, 192, 115)">Prethodna</button>
+        &nbsp;
+        <button (click)="nextStepM()">Sledeca</button>
+    </div>
+
+    <div *ngIf="currentStep === totalSteps">
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>korIme</th>
+                        <th>Ime</th>
+                        <th>Prezime</th>
+                        <th>Gmail</th>
+                        <th>Adresa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let dekorator of dekorateri">
+                        <td>{{ dekorator.korIme }}</td>
+                        <td>{{ dekorator.ime }}</td>
+                        <td>{{ dekorator.prezime }}</td>
+                        <td>{{ dekorator.gmail }}</td>
+                        <td>{{ dekorator.adresa }}</td>
+                        <td>
+                            <button [ngClass]="isDodato(dekorator) ? 'remove-btn' : 'add-btn'"
+                                (click)="dodajDekoratora(dekorator)">
+                                {{ isDodato(dekorator) ? 'Ukloni' : 'Dodaj' }}
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <span class="crveno">{{porukaKraj}}</span>
+        <br>
+        <button (click)="prevStep()" style="background-color: rgb(219, 192, 115)">Prethodna</button>
+        &nbsp;
+        <button (click)="potvrdi()">Potvrdi</button>
+    </div>
+
+
+</div>
+
+<div class="footer">
+    <p>© 2024 Djordje Djordjic. Sva prava zadržana.</p>
+</div>

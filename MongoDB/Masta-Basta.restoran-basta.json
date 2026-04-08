@@ -1,0 +1,93 @@
+[{
+  "_id": {
+    "$oid": "66d645b6760340258caa5167"
+  },
+  "vlasnik": "elena",
+  "datumZakazivanja": "2024-09-02T23:09:42.134Z",
+  "datumDolaskaMajstora": "2024-10-02T01:09",
+  "ukupnaKvadratura": "55",
+  "kvadraturaPodFontanom": "22",
+  "kvadraturaPodZelenilom": "22",
+  "brojLezaljki": "3",
+  "brojStolova": "3",
+  "opis": "",
+  "usluge": [
+    {
+      "naziv": "dekoracija stolova",
+      "cena": "300"
+    },
+    {
+      "naziv": "ciscenje nakon slavlja ",
+      "cena": "200"
+    }
+  ],
+  "nazivFirme": "Dekoracija NBGD",
+  "izgled": "",
+  "dekorater": "jare",
+  "status": "Prihvaceno",
+  "komentar": "",
+  "ocena": "",
+  "datumZavrsetka": ""
+},
+{
+  "_id": {
+    "$oid": "66d645d7760340258caa5170"
+  },
+  "vlasnik": "elena",
+  "datumZakazivanja": "2024-09-02T23:10:15.812Z",
+  "datumDolaskaMajstora": "2024-11-02T01:09",
+  "ukupnaKvadratura": "44",
+  "kvadraturaPodFontanom": "2",
+  "kvadraturaPodZelenilom": "20",
+  "brojLezaljki": "6",
+  "brojStolova": "3",
+  "opis": "",
+  "usluge": [
+    {
+      "naziv": "dekoracija stolova",
+      "cena": "300"
+    },
+    {
+      "naziv": "ciscenje nakon slavlja ",
+      "cena": "200"
+    }
+  ],
+  "nazivFirme": "Dekoracija NBGD",
+  "izgled": "",
+  "dekorater": "",
+  "status": "Cekanje",
+  "komentar": "",
+  "ocena": "",
+  "datumZavrsetka": ""
+},
+{
+  "_id": {
+    "$oid": "66d64605760340258caa5179"
+  },
+  "vlasnik": "elena",
+  "datumZakazivanja": "2024-09-02T23:11:01.740Z",
+  "datumDolaskaMajstora": "2024-10-12T01:10",
+  "ukupnaKvadratura": "70",
+  "kvadraturaPodFontanom": "33",
+  "kvadraturaPodZelenilom": "22",
+  "brojLezaljki": "6",
+  "brojStolova": "6",
+  "opis": "",
+  "usluge": [
+    {
+      "naziv": "dekoracija prilaza basti",
+      "cena": "450"
+    },
+    {
+      "naziv": "dekoracija bazena",
+      "cena": "100"
+    }
+  ],
+  "nazivFirme": "Lens Dekor",
+  "izgled": "",
+  "dekorater": "",
+  "status": "Cekanje",
+  "komentar": "",
+  "ocena": "",
+  "datumZavrsetka": ""
+}]

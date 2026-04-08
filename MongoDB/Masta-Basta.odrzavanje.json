@@ -1,0 +1,20 @@
+[{
+  "_id": {
+    "$oid": "66d6490e760340258caa51f7"
+  },
+  "idZakazivanja": "66d64620760340258caa5182",
+  "nazivFirme": "Lens Dekor",
+  "vlasnik": "elena",
+  "datumPoslednjegOdrzavanja": "2024-09-07T02:05",
+  "status": "U procesu"
+},
+{
+  "_id": {
+    "$oid": "66d652a4760340258caa5360"
+  },
+  "idZakazivanja": "66d64947760340258caa5209",
+  "nazivFirme": "Lens Dekor",
+  "vlasnik": "elena",
+  "datumPoslednjegOdrzavanja": "",
+  "status": "Cekanje"
+}]

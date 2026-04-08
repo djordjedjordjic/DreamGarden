@@ -1,0 +1,97 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #e9d5ba;
+    color: #333;
+    position: relative;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #e9d5ba;
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    margin-top: 20px;
+    min-height: calc(100vh - 70px);
+    margin-bottom: 40px;
+    padding-bottom: 50px;
+}
+
+/* Manji ekrani, npr. mobilni telefoni */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav {
+        position: static;
+        margin-top: 10px;
+        transform: none;
+    }
+}
+
+/* Srednji ekrani, npr. tableti */
+@media (min-width: 769px) and (max-width: 1280px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+}

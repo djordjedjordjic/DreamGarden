@@ -1,0 +1,20 @@
+<app-nr-izgled>
+    <div class="main-container">
+        <h2>Promena lozinke</h2>
+        <hr>
+        Korisničko ime: <input type="text" [(ngModel)]="korIme">
+        <br />
+        Stara lozinka: <input type="password" [(ngModel)]="staraLozinka">
+        <br />
+        Nova lozinka: <input type="password" [(ngModel)]="novaLozinka">
+        <br />
+        Ponovljena nova lozinka: <input type="password" [(ngModel)]="ponovoNovaLozinka">
+        <br />
+        <span class="crveno">
+            {{porukaNovaSifra}}
+        </span>
+        <br>
+        <button (click)="promeniSifru()">Promeni sifru</button>
+        <br>
+    </div>
+</app-nr-izgled>

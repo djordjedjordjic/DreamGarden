@@ -1,0 +1,14 @@
+export class Zahtev{
+    korIme: string = ""
+    lozinka: string = ""
+    ime: string = ""
+    prezime: string = ""
+    pol: string = ""
+    adresa: string = ""
+    kontaktTelefon: string = ""
+    gmail: string = ""
+    profilnaSlika: string = ""
+    brojKartice: string = ""
+    tip: string = ""
+    aktiviran: string = ""
+  }

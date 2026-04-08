@@ -1,0 +1,23 @@
+<header>
+    <div class="logo">
+        <img [src]="ikonaProfilna" alt="Profilna">
+    </div>
+    <h1>{{korisnik.korIme}}</h1>
+    <nav>
+        <ul>
+            <li><a href="#" routerLink="/dekorater-main">Profil</a></li>
+            <li><a href="#" routerLink="/dekorater-zakazivanja">Zakazivanja</a></li>
+            <li><a href="#" routerLink="/dekorater-odrzavanje">Odrzavanja</a></li>
+            <li><a href="#" routerLink="/dekorater-statistika">Statistika</a></li>
+            <li><a href="#" (click)="logout($event)">Izloguj se</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="content">
+    <ng-content></ng-content>
+</div>
+
+<footer>
+    <p>© 2024 Djordje Djordjic. Sva prava zadrzana.</p>
+</footer>
